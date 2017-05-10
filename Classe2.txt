@@ -1,0 +1,92 @@
+package br.com.stelo.cadu.persistencia.dao;
+
+import java.util.List;
+
+import br.com.stelo.cadu.persistencia.entidades.Conta;
+
+/**
+ * The Interface ContaDAO.
+ */
+public interface ContaDAO extends BaseDAO<Conta> {
+
+	/**
+	 * Cadastra Conta.
+	 *
+	 * @param conta the conta
+	 * @return Conta
+	 */
+	Conta cadastraConta(final Conta conta);
+
+	/**
+	 * Atualização de conta.
+	 *
+	 * @param contaAnterior the conta anterior
+	 * @param contaAtualizacao the conta atualizacao
+	 */
+	void atualizarConta(final Conta contaAnterior, final Conta contaAtualizacao);
+
+	/**
+	 * Busca conta ativa.
+	 *
+	 * @param idConta the id conta
+	 * @param idStelo the id stelo
+	 * @return the conta
+	 */
+	Conta buscaContaAtiva(final Long idConta, final Long idStelo);
+
+	/**
+	 * Busca todas contas de uma pessoa .
+	 *
+	 * @param idStelo the id stelo
+	 * @param idTipoRelacionamento the id tipo relacionamento
+	 * @param idEc the id ec
+	 * @return the list
+	 */
+	List<Conta> buscaContasPessoa(final Long idStelo, final Integer idTipoRelacionamento, final Long idEc);
+
+	/**
+	 * Busca existencia de conta pagamento associada a um ID_Stelo.
+	 *
+	 * @param idStelo the id stelo
+	 * @return the list
+	 */
+	List<Conta> buscaContaPagamento(final Long idStelo);
+
+	/**
+	 * Busca tipo de conta de uma pessoa .
+	 *
+	 * @param tpConta the tp conta
+	 * @param idStelo the id stelo
+	 * @return the conta
+	 */
+	Conta buscaTipoContaPessoa(final Integer tpConta, final Long idStelo);
+
+	/**
+	 * Busca Conta por id Stelo e id conta (ativo ou inativo).
+	 *
+	 * @param idStelo the id stelo
+	 * @param idConta the id conta
+	 * @return the conta
+	 */
+	Conta buscaContaPorIdContaIdStelo(final Long idStelo, final Long idConta);
+
+	/**
+	 * Busca Conta por Id conta e status = 1.
+	 *
+	 * @param idConta the id conta
+	 * @return the conta
+	 */
+	Conta buscaContaPorIdConta(Long idConta);
+
+	/**
+	 * Busca Conta por id Stelo e numero conta, agencia e digito aagencia
+	 * (ativa).
+	 *
+	 * @param idStelo the id stelo
+	 * @param numeroConta the numero conta
+	 * @param agencia the agencia
+	 * @param digitoAgencia the digito agencia
+	 * @return the conta
+	 */
+	Conta buscaContaPorNumeroContaAgenciaIdStelo(Long idStelo, String numeroConta, String agencia, String digitoAgencia);
+}
