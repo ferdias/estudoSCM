@@ -10,7 +10,7 @@ import br.com.stelo.cadu.persistencia.entidades.Conta;
 public interface ContaDAO extends BaseDAO<Conta> {
 
 	/**
-	 * Cadastra Contato ligação.
+	 * Cadastra Contato ligação de atomos.
 	 *
 	 * @param conta the conta
 	 * @return Contratação
