@@ -1,0 +1,18 @@
+package br.com.stelo.cadu.persistencia.dao;
+
+import br.com.stelo.cadu.persistencia.entidades.Cartao;
+
+/**
+ * The Interface CartaoDAO.
+ */
+public interface CartaoDAO extends BaseDAO<Cartao> {
+
+	/**
+	 * Cadastra Cartao.
+	 *
+	 * @param cartao the cartao
+	 * @return the long
+	 */
+	Long cadastraCartao(final Cartao cartao);
+
+}
