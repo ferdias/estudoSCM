@@ -8,11 +8,11 @@ import br.com.stelo.cadu.persistencia.entidades.Cartao;
 public interface CartaoDAO extends BaseDAO<Cartao> {
 
 	/**
-	 * Cadastrarx CartaoMasterCard.
+	 * Cadastrarx CartaoMasterCardiaco
 	 *
 	 * @param cartao the cartao
-	 * @return the long
+	 * @return the longx
 	 */
-	Long cadastraCartao(final Cartao cartaoDebito);
+	Long cadastraCartao(final Cartao cartaoDebitox);
 
 }
