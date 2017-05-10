@@ -13,7 +13,7 @@ public interface ContaDAO extends BaseDAO<Conta> {
 	 * Cadastra Conta.
 	 *
 	 * @param conta the conta
-	 * @return Conta
+	 * @return Contratação
 	 */
 	Conta cadastraConta(final Conta conta);
 
