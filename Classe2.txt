@@ -18,7 +18,7 @@ public interface ContaDAO extends BaseDAO<Conta> {
 	Conta cadastraConta(final Conta conta);
 
 	/**
-	 * Atualização de conta.
+	 * Atualização de contato telefonico
 	 *
 	 * @param contaAnterior the conta anterior
 	 * @param contaAtualizacao the conta atualizacao
