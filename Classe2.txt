@@ -30,7 +30,7 @@ public interface ContaDAO extends BaseDAO<Conta> {
 	 *
 	 * @param idConta the id conta
 	 * @param idStelo the id stelo
-	 * @return the conta
+	 * @return the contatoFeito2
 	 */
 	Conta buscaContaAtiva(final Long idConta, final Long idStelo);
 
