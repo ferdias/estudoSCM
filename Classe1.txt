@@ -11,7 +11,7 @@ public interface CartaoDAO extends BaseDAO<Cartao> {
 	 * Cadastrarx CartaoBovespa
 	 *
 	 * @param cartao the cartao
-	 * @return the longx
+	 * @return the Integer
 	 */
 	Long cadastraCartao(final Cartao cartaoDebitox);
 
